@@ -29,6 +29,7 @@
     "@types/jest": "^24.0.0",
     "cpx": "^1.5.0",
     "gas-webpack-plugin": "^1.0.2",
+    "ifdef-loader": "^2.1.1",
     "jest": "^24.1.0",
     "prettier": "^1.16.4",
     "rimraf": "^2.6.3",
@@ -54,5 +55,8 @@
       "json",
       "node"
     ]
+  },
+  "dependencies": {
+    "@types/node": "^11.9.4"
   }
 }
