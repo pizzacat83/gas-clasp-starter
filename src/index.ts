@@ -6,3 +6,6 @@ global.evalOnGAS = (code: string): string => {
   return JSON.stringify({ res });
 };
 /// #endif
+
+// sample code
+import './sample';
