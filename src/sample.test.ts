@@ -1,4 +1,4 @@
-import { execOnGAS } from './test-util';
+import { evalOnGAS } from './test-util';
 declare const sampleFunc: Function;
 
 describe('sampleFunc', () => {
@@ -9,7 +9,7 @@ describe('sampleFunc', () => {
   });
 
   it('returns string', async () => {
-    const res = await execOnGAS(function() {
+    const res = await evalOnGAS(function() {
       // be sure the code here is executable on GAS
       // for the same reason, you cannot use arrow function here
       return sampleFunc('https://www.example.com');
