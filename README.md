@@ -73,6 +73,20 @@ Set the scriptId of the project for release.
 }
 ```
 
+#### Open `evalOnGAS-token`, set verify token
+set a token to prevent others from executing `evalOnGAS`.
+
+#### Set base64-encoded *hash* of `evalOnGAS-token` to `evalOnGAS-token` of GAS script property of the project for test
+Be sure not to set the raw token. You can get the hash by executing the code below.
+
+```javascript
+const crypto = require('crypto');
+const sha512 = crypto.createHash('sha512');
+sha512.update('your token');
+console.log(sha512.digest('base64'));
+```
+
+
 #### chmod scripts for deployment
 ```bash
 chmod u+x ./deploy.test.sh
